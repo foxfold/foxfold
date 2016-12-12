@@ -1,4 +1,8 @@
+body {
+	display: flex;
+  align-items: center;
+}
+
 img {
-	width:60%;
-	margin:7% 20% 0% 20%;
+	min-width:300px;
 }
