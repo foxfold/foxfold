@@ -12,7 +12,7 @@ body {
 	display: flex;
   align-items: center;
 	background-color:#171717;
-	margin-top:15%;
+	margin:15% 0 0 0;
 	flex-direction: column;
   font-family:Open;
 }
@@ -50,12 +50,12 @@ main a{
 main a:hover {color:#EC5613}
 
 footer {
+	width:100%;
 	display:block;
 	position:absolute;
-	bottom:0px;
+	bottom:3px;
 	color:#666;
-	width:99%;
 	text-align:center;
-	margin-bottom:3px;
+	margin:0 auto;
 	font-size:11px;
 }
