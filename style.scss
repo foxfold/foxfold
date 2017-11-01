@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Open;
+    src: url(fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenR;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    font-family: Open;
+    letter-spacing: 0.1em;
+    header {
+        max-width: 800px;
+        width: 90vw;
+        margin-top:-5em;
+        .logo {
+            width: 100%;
+            display:flex;
+            flex-direction:row;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+            img {
+                width: auto; 
+                height: 100%;
+            }
+/*             position: relative; */
+/*             top: 231px; */
+            
+            max-width:800px;
+            @media screen and (max-width:590px) {
+                flex-direction: column;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .badge {
+/*                     max-width: 50vw; */
+                    width: 40vw;
+                    margin: 0 auto 1.5vh auto;
+                }
+                .wordmark {
+                    width: 80vw;
+                    margin: 0 auto;
+                }
+            }
+        }
+        main {
+            padding-left: 28%;
+            font-size: 20px;
+            color: white;
+            p {
+                margin: 1em 0 0.5em 0;
+                font-size: 24px;
+                color: #c9c9c9;
+                @media screen and (max-width:590px) {
+                    width: 220px;
+                    margin: 1.2em auto 1em auto;
+                }
+            }
+            .contact {
+                display: inline-block;
+                padding: 0.25em 0.75em;
+                font-family: OpenR;
+                font-size: 20px;
+                text-align:center;
+                color: rgba(0,0,0,0.9);
+                background-color: #FF8E21;
+                &:hover { background-color: #EC5613; }
+                text-decoration: none;
+                border-radius: 0.2em;
+                letter-spacing: 0.03em;
+                transition: all 0.1s;
+                @media screen and (max-width:590px) {
+                    margin: 0;
+                    display: block;
+                    position: fixed;
+                    bottom: 40px;
+                    width: auto;
+                    left: 10px;
+                    right: 10px;
+                } 
+            }
+            @media screen and (max-width:590px) {
+                padding-left: 0em;
+            }
+        }
+    }
+    footer {
+        width: 100vw;
+        display: block;
+        position: fixed;
+        bottom: 3px;
+        color: #a2a2a4;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 11px;
+    }
+}
