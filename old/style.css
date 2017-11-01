@@ -1,11 +1,11 @@
 @font-face {
     font-family: Open;
-    src: url(./fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
 }
 
 @font-face {
     font-family: OpenR;
-    src: url(./fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 body {
